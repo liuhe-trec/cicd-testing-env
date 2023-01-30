@@ -1,7 +1,7 @@
 steps:
   - name: "gcr.io/$PROJECT_ID/helm"
     entrypoint: "bash"
-    args: ["scripts/helm_deploy.sh"]
+    args: ["helm_deploy.sh"]
     env:
       - "ENV=$_ENV"
       - "CLOUDSDK_COMPUTE_ZONE=$_CLOUDSDK_COMPUTE_ZONE"
