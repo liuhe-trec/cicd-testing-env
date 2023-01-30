@@ -3,4 +3,4 @@ gcloud container clusters get-credentials "$CLOUDSDK_CONTAINER_CLUSTER" --zone "
 # Upgrade charts
 helm upgrade --install \
     -f "./ingress-nginx/values.yaml" cicd-testing-env \
-    ./ingress-nginx
+    ./ingress-nginx --namespace ingress-nginx
