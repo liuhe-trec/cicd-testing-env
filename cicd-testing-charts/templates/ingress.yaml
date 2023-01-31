@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx-ingress
+spec:
+  rules:
+  - host: 34.146.88.74
+    http:
+      paths:
+      - path: "/abc"
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: "cicd-testing-vue"
+            port:
+              number: 80
