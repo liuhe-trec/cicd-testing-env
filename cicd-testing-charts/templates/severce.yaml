@@ -14,5 +14,3 @@ spec:
       name: http
   selector:
     app: "cicd-testing-vue"
-    app.kubernetes.io/name: "cicd-testing-vue"
-    app.kubernetes.io/instance: {{ .Release.Name }}
