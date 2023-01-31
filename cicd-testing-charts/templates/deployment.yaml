@@ -1,0 +1,20 @@
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "cicd-testing-vue"
+  namespace: "default"
+  labels:
+    app: "cicd-testing-vue"
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: "cicd-testing-vue"
+  template:
+    metadata:
+      labels:
+        app: "cicd-testing-vue"
+    spec:
+      containers:
+      - name: "cicd-testing-vue-sha256-1"
+        image: "asia.gcr.io/ssc-windows-ui-staging/cicd-testing-vue@sha256:8b4f2a73a29f14b1b9356de7f495590c0a50914646ebc51b88dfc79cff4fc2cb"
