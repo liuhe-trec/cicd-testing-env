@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: "cicd-testing-vue"
-        image: "asia.gcr.io/ssc-windows-ui-staging/cicd-testing-vue@sha256:560db74485d482af0969df80e52aeaac9d725f97d4cf4714a0a9ebdd787f6555"
+        image: "asia.gcr.io/ssc-windows-ui-staging/cicd-testing-vue:d73781a"
         imagePullPolicy: Always
         ports:
         - containerPort: 80
