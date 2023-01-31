@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: "cicd-testing-vue"
+  labels:
+    app: "cicd-testing-vue"
+    service: "cicd-testing-vue"
+spec:
+  type: {{ .Values.windowsuiService.v2p6.service.type }}
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+      name: http
+  selector:
+    app: "cicd-testing-vue"
+    app.kubernetes.io/name: "cicd-testing-vue"
+    app.kubernetes.io/instance: {{ .Release.Name }}
