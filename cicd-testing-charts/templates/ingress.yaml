@@ -4,7 +4,7 @@ metadata:
   name: nginx-ingress
 spec:
   rules:
-  - host: 34.146.88.74
+  - host: sandbox-ui-cicd.raicart.io
     http:
       paths:
       - path: "/abc"
