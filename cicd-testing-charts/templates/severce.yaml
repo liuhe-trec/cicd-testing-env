@@ -6,7 +6,7 @@ metadata:
     app: "cicd-testing-vue"
     service: "cicd-testing-vue"
 spec:
-  type: {{ .Values.windowsuiService.v2p6.service.type }}
+  type: ClusterIP
   ports:
     - port: 80
       targetPort: 80
