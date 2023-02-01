@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: nginx-ingress
   annotations:
-    kubernetes.io/ingress.class: nginx
+    # kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/rewrite-target: "/"
     # nginx.ingress.kubernetes.io/preserve-trailing-slash: "true"
 spec:
@@ -11,7 +11,7 @@ spec:
   - host: sandbox-ui-cicd.raicart.io
     http:
       paths:
-      - path: "/*"
+      - path: "/abc"
         pathType: ImplementationSpecific
         backend:
           service:
