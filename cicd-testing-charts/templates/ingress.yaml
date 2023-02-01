@@ -7,7 +7,7 @@ spec:
   - host: sandbox-ui-cicd.raicart.io
     http:
       paths:
-      - path: "/abc"
+      - path: "/*"
         pathType: ImplementationSpecific
         backend:
           service:
