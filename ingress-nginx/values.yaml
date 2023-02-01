@@ -367,8 +367,8 @@ controller:
     apiVersion: autoscaling/v2
     enabled: true
     annotations: {}
-    minReplicas: 2
-    maxReplicas: 11
+    minReplicas: 1
+    maxReplicas: 3
     targetCPUUtilizationPercentage: 50
     targetMemoryUtilizationPercentage: 50
     behavior: {}
